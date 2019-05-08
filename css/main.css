@@ -13,7 +13,7 @@ html {
     background: url('../img/jumbotron.jpg');
     background-color: #cccccc; /* Used if the image is unavailable */
     min-height: 100vh;/* You must set a specified height */
-    background-position: top center; /* Center the image */
+    background-position: top right; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; 
     background-attachment: fixed;
@@ -24,8 +24,7 @@ html {
     font-weight: 300;
 }
 #servicesCarousel{
-    margin-top: 100px;
-    min-height:90vh;
+    margin-top: 5%;
 }
 .servicesCarousel h2 {
     font-size: 3em;
@@ -54,10 +53,11 @@ html {
     height:auto;
     width:150px;
 }
+
 .carousel-body-left {
     position: absolute;
     right: 15%;
-    bottom: 20%;
+    top: 20%;
     width:40%;
     left: 15%;
     z-index: 10;
@@ -67,10 +67,31 @@ html {
     text-align: left;    
 }
 .carousel-caption{
-    bottom:20%!important;
+    top:25%!important;
 }
-
-
+.carousel-item img {
+    width: 100vw;
+}
+.tech_background {
+    background: url('../img/tech_background.jpg');
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-size: cover;
+    background-repeat: no-repeat; /* Do not repeat the image */  
+    background-position: center center;
+    margin-top:5%;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+.tech_background .card {
+    background: rgba(0, 0, 0, 0);
+    border: none; 
+}
+.tech_background .list-group-item {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 2.25em;
+    font-weight: 300;
+}
 .projects .row {
     margin-bottom: 5%;
 }
@@ -85,13 +106,11 @@ html {
     background: url('../img/das-head-end-project.jpg');
     background-color: #cccccc; /* Used if the image is unavailable */
     background-size: contain;
-    background-repeat: no-repeat; /* Do not repeat the image */
-    
+    background-repeat: no-repeat; /* Do not repeat the image */  
 }
 .clients .clients-side-image{
     background: url('../img/clients.jpg');
     background-color: #cccccc; /* Used if the image is unavailable */
-
     background-repeat: no-repeat; /* Do not repeat the image */
     color:#fafafa;     
 }

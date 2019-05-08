@@ -6,8 +6,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
+        <title>Wireless Management Services</title>
+        <meta name="description" content="wireless network construction">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
@@ -23,6 +23,8 @@
         -->
 
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive_phones.css">
+        <link rel="stylesheet" href="css/responsive_tablets.css">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -46,42 +48,42 @@
         <![endif]-->
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron h-100 p-5" style="margin-bottom: 0px; margin-top:0px;">
-      <div class="d-flex justify-content-between flex-column vh-75" style=>
+    <div class="jumbotron d-flex flex-column justify-content-center" style="margin-bottom: 0px; margin-top:0px;">
+      <div class="flex-column" style=>
         <h1 class='display-1'>Wireless Management Services</h1>
-        <div class="w-50">
-          <div class="display-3 font-weight-light">Specializing in Large Venue & In-Building Networks</div>
+        <div class="col-md-6 col-sm-12">
+          <div class="display-4 font-weight-light p-5">Specializing in Large Venue & In-Building Networks</div>
           <div class="m-5">
-            <a class="btn btn-primary btn-lg"  href="#servicesCarousel" ><span class="font-weight-light" style="font-size: 2em">Learn More<span></span></a>       
+            <a class="btn btn-primary btn-lg"  href="#servicesCarousel" ><span class="font-weight-light" style="font-size: 2em">Learn More<span></a>       
           </div>
         </div>
-      </div>>
+      </div>
     </div>
 
-    <div id="servicesCarousel" class="carousel slide" data-ride="carousel">
+    <div id="servicesCarousel" class="carousel slide" data-ride="carousel"  data-wrap="false">
         <ol class="carousel-indicators">
           <li data-target="#servicesCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#servicesCarousel" data-slide-to="1"></li>
           <li data-target="#servicesCarousel" data-slide-to="2"></li>
           <li data-target="#servicesCarousel" data-slide-to="3"></li>          
         </ol>
-        <div class="carousel-inner">
+        <div class="carousel-inner"a>
           <div class="carousel-item active">
-            <img class="d-block w-100" src="./img/project_design.jpg" alt="project design">
+            <img class="d-block" src="./img/project_design.jpg" alt="project design">
             <div class="carousel-caption d-none d-md-block">
                 <p class="display-3 text-left">Project design</p>
                 <p class="display-5 text-left">Planning your key features, structure, criteria for success, and major deliverables. </p>
             </div>            
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="./img/project_mgmt.jpg" alt="project management">
+            <img class="d-block" src="./img/project_mgmt.jpg" alt="project management">
             <div class="carousel-caption d-md-block">
                 <p class="display-3 text-left">Program & Project Management</h1>
                 <p class="display-5 text-left">Coordinating your multiple projects or single project for your organization and helping you align your overall business goals.</p>
             </div>            
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="./img/construction.jpg" alt="construction" />
+            <img class="d-block" src="./img/construction.jpg" alt="construction" />
               <div class="carousel-body-left">
                   <div class="card text-white mb-3"">
                       <div class="card-body flex-column d-flex align-items-center">
@@ -97,8 +99,8 @@
                             
           </div>
           <div class="carousel-item">
-              <img class="d-block w-100" src="./img/audit.jpg" alt="audit">
-              <div class="carousel-body-left d-none d-md-block">
+              <img class="d-block" src="./img/audit.jpg" alt="audit">
+              <div class="carousel-caption d-none d-md-block">
                   <p class="display-3 text-left">Quality Audits</p>
                   <p class="display-5 text-left">We can help determine if your organization complies with quality system processes with procedural or results-based assessment criteria</p>
               </div>               
@@ -114,6 +116,25 @@
         </div>
     </div>
     
+    <div class="tech_background container-fluid">
+      <div class="col-md-6">
+        <div class="card text-dark mb-3"">
+          <div class="card-body flex-column">
+            <p class="display-3">Technical Background</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">30+ years in the telecommunications industry</li>
+                <li class="list-group-item">Large Venue, Indoor & Outdoor DAS, eFemto, SpiderCloud, Wifi, & 2 Way Radio applications</li>
+                <li class="list-group-item">Super Bowl, Stadium, Arena, Race Track, Airport, Convention Center, Enterprise, Commercial High Rise, & Campus locations</li>
+                <li class="list-group-item">iBwave Certified</li>
+                <li class="list-group-item">Neutral Host DAS OEM Experience</li>  
+                <li class="list-group-item">Budget Management</li>
+                <li class="list-group-item">Electrical systems utilizing battery back-up and digital electricity</li>
+                <li class="list-group-item">RF testing and troubleshooting oversight</li>                                
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="projects container" >
       <div class="row border border-0">
         <div class ="col-md-12 p-5">
@@ -248,10 +269,10 @@
     </div>
     <div class="certifications bg-info">
         <div class="row">
-          <div class ="col-md-3 p-5">
+          <div class ="col-lg-3 col-md-5 p-5">
             <p class="display-3 text-white text-left">Certifications</p>
           </div>  
-          <div class ="col-md-9 p-5">
+          <div class ="col-lg-9 col-md-7 p-5">
             <p class="display-5 text-left text-white">iBwave Certification Program
                 BICSI, Certified In-Building Engineering Technologist
                 Vendor Certifications (DAS OEM, DC Power, Fiber, PIM, RF)
