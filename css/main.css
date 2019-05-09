@@ -12,7 +12,7 @@ html {
 .jumbotron {
     background: url('../img/jumbotron.jpg');
     background-color: #cccccc; /* Used if the image is unavailable */
-    min-height: 100vh;/* You must set a specified height */
+    min-height: 90vh;/* You must set a specified height */
     background-position: top right; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; 
@@ -22,6 +22,26 @@ html {
 .display-5{
     font-size: 3em;
     font-weight: 300;
+}
+.display-6{
+    font-size: 2em;
+    font-weight: 300;
+}
+#navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    padding-left: 5%;
+    padding-right:5%;
+  }
+#email {
+    text-decoration: none;
+}
+#in-building-services img {
+    height:75px;
+    width:auto;
 }
 #servicesCarousel{
     margin-top: 5%;
@@ -123,3 +143,9 @@ html {
     -moz-column-width: 20%;
     column-width: 20%; 
 }
+#certifications {
+    padding:5%;
+}
+#contactWMS i {
+    font-size: medium;
+  }

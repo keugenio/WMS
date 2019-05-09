@@ -25,6 +25,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/responsive_phones.css">
         <link rel="stylesheet" href="css/responsive_tablets.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -47,6 +48,21 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+    <!-- Main Header fixed to the top-->
+
+    <nav id="navbar" class="navbar fixed-top bg-dark navbar-toggleable-md navbar-light bg-faded d-flex">
+        <div class="mr-auto">
+          <a class="display-5 text-white" href="#">Wireless Management Services</a>
+        </div>    
+        
+            <a id="email" class="text-left display-6 text-white" href="mailto:jayinouye@wirelessmangementservices.com">
+                <div class="d-flex align-items-center">
+                  <i class="glyphicon glyphicon-envelope display-6 text-white pr-2"></i>
+                </div>
+            </a>
+        
+    </nav>    
+
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron d-flex flex-column justify-content-center" style="margin-bottom: 0px; margin-top:0px;">
       <div class="flex-column" style=>
@@ -59,7 +75,17 @@
         </div>
       </div>
     </div>
-
+    <div id="in-building-services" class="row d-flex justify-content-center bg-dark">
+      <img src="./img/das-project/das_project_6.png" />
+      <span class="bg-white">
+        <img src="./img/das-project/das_project_5.png" />
+      </span>
+      <img src="./img/das-project/das_project_7.png" />
+      <img src="./img/wms1.png" />
+      <img src="./img/das-project/das_project_8.png" />
+      <img src="./img/das-project/das_project_10.png" />
+      <img src="./img/salesforce.png" />
+    </div>
     <div id="servicesCarousel" class="carousel slide" data-ride="carousel"  data-wrap="false">
         <ol class="carousel-indicators">
           <li data-target="#servicesCarousel" data-slide-to="0" class="active"></li>
@@ -70,14 +96,14 @@
         <div class="carousel-inner"a>
           <div class="carousel-item active">
             <img class="d-block" src="./img/project_design.jpg" alt="project design">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-md-block">
                 <p class="display-3 text-left">Project design</p>
                 <p class="display-5 text-left">Planning your key features, structure, criteria for success, and major deliverables. </p>
             </div>            
           </div>
           <div class="carousel-item">
             <img class="d-block" src="./img/project_mgmt.jpg" alt="project management">
-            <div class="carousel-caption d-md-block">
+            <div class="carousel-caption d-sm-block d-md-block">
                 <p class="display-3 text-left">Program & Project Management</h1>
                 <p class="display-5 text-left">Coordinating your multiple projects or single project for your organization and helping you align your overall business goals.</p>
             </div>            
@@ -100,7 +126,7 @@
           </div>
           <div class="carousel-item">
               <img class="d-block" src="./img/audit.jpg" alt="audit">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption d-sm-block d-md-block">
                   <p class="display-3 text-left">Quality Audits</p>
                   <p class="display-5 text-left">We can help determine if your organization complies with quality system processes with procedural or results-based assessment criteria</p>
               </div>               
@@ -268,11 +294,11 @@
         </div>            
     </div>
     <div class="certifications bg-info">
-        <div class="row">
-          <div class ="col-lg-3 col-md-5 p-5">
-            <p class="display-3 text-white text-left">Certifications</p>
+        <div id="certifications" class="row">
+          <div class ="row p-5">
+            <p class="display-3 text-white text-center">Certifications</p>
           </div>  
-          <div class ="col-lg-9 col-md-7 p-5">
+          <div class ="row p-5">
             <p class="display-5 text-left text-white">iBwave Certification Program
                 BICSI, Certified In-Building Engineering Technologist
                 Vendor Certifications (DAS OEM, DC Power, Fiber, PIM, RF)
@@ -281,12 +307,15 @@
           </div>  
         </div>        
     </div>
-    <div>
-      <hr>
-      <footer>
+    <div id="contactWMS" class="container-fluid bg-dark text-white pt-4">
+      <div>
+        <div class="row justify-content-around">
+          <i class="glyphicon glyphicon-phone">&nbsp(925)785-3144</i>
+          <i class="glyphicon glyphicon-envelope">&nbsp<a href="mailto:jayinouye@wirelessmanagementservices.com">email</a></i> </div>
+        </div>
+        <hr>
         <p class="text-center">&copy; Wireless Management Services 2019</p>
-      </footer>
-    </div> <!-- /container -->        
+      </div>       
     
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

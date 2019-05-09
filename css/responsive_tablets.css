@@ -5,9 +5,7 @@
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
-  .display-3 {
-    font-size:5.5em!important;
-  }
+
   .display-5{
     font-size:3.5em;
   }
@@ -16,11 +14,15 @@
   }
   .carousel-body-left{
     width:75%;
-    top:20%;
+    top:10%;
   }
   .carousel-item img {
     width: auto;
     height:75vh;
+  }
+  .gallery img {
+    width:100px;
+    height:auto;
   }
 }
 

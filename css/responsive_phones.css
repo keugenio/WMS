@@ -1,4 +1,4 @@
-* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
 @media only screen 
@@ -6,6 +6,40 @@
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
+    #in-building-services {
+        display:none;
+    }
+    .gallery img {
+      width:50px;
+      height:auto;
+    }
+    .carousel img {
+      height: 50vh;
+      width: auto;
+    }
+    .carousel-body-left{
+      top:0px;
+      width:100%;
+      right:0px;
+      left:0px;
+      padding: 10%;
+    }
+
+    .display-3{
+      font-size: 2em!important;
+    }
+    .display-5{
+      font-size: 1.5em;
+    }
+    .list-group-item{
+      font-size: 1.5em!important;
+    }
+    .card-body{
+      padding:5px!important;
+    }
+    #certifications row {
+      margin:0;
+    }
 }
 
 /* Portrait */
@@ -14,7 +48,9 @@
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
-
+    #in-building-services {
+        display:none;
+    }
 }
 
 /* Landscape */
@@ -23,7 +59,9 @@
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
-
+    #in-building-services {
+        display:none;
+    }
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
@@ -33,7 +71,9 @@
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
-
+    #in-building-services {
+        display:none;
+    }
 }
 
 /* Portrait */
@@ -42,7 +82,9 @@
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
-
+    #in-building-services {
+        display:none;
+    }
 }
 
 /* Landscape */
@@ -51,7 +93,9 @@
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
-
+    #in-building-services {
+        display:none;
+    }
 }
 
 /* ----------- iPhone X ----------- */
@@ -61,7 +105,10 @@
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
-
+    #in-building-services img{
+        width:auto;
+        height: 23px;;
+    }
 }
 
 /* Portrait */
@@ -70,7 +117,9 @@
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
-
+    #in-building-services {
+        display:none;
+    }
 }
 
 /* Landscape */
@@ -79,5 +128,7 @@
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
-
+    #in-building-services {
+        display:none;
+    }
 }
