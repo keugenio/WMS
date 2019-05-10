@@ -40,6 +40,9 @@
     #certifications row {
       margin:0;
     }
+    #contactWMS i {
+      font-size: small
+    }
 }
 
 /* Portrait */
