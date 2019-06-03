@@ -12,12 +12,16 @@ html {
 .jumbotron {
     background: url('../img/jumbotron.jpg');
     background-color: #cccccc; /* Used if the image is unavailable */
-    min-height: 90vh;/* You must set a specified height */
+    min-height: 100vh;/* You must set a specified height */
     background-position: top right; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; 
     background-attachment: fixed;
     color:#fafafa;   
+}
+.jumbotron.row {
+    height: 100%;
+    display: table-row;
 }
 .display-5{
     font-size: 3em;
@@ -35,9 +39,22 @@ html {
     transition: top 0.3s;
     padding-left: 5%;
     padding-right:5%;
-  }
+}
+.bg-offwhite {
+    background-color: #fafafa;
+}
+.bg-dark-fade{
+    background-color: rgba(7, 58, 65, 0.5)
+}
+.text-shadow-black {
+    text-shadow: 3px 3px #000000;
+}
 #email {
     text-decoration: none;
+}
+#whatWeDo {
+    height:100vh;
+    padding:20px;
 }
 #in-building-services img {
     height:75px;
@@ -73,12 +90,15 @@ html {
     height:auto;
     width:150px;
 }
+.thumb-75{
+    height:auto;
+    width:75px;
+}
 
 .carousel-body-left {
     position: absolute;
     right: 15%;
-    top: 20%;
-    width:40%;
+    top: 25%;
     left: 15%;
     z-index: 10;
     padding-top: 20px;
@@ -89,9 +109,7 @@ html {
 .carousel-caption{
     top:25%!important;
 }
-.carousel-item img {
-    width: 100vw;
-}
+
 .tech_background {
     background: url('../img/tech_background.jpg');
     background-color: #cccccc; /* Used if the image is unavailable */
@@ -136,12 +154,20 @@ html {
 }
 
 .gallery {
-    -webkit-column-count: 5;
-    -moz-column-count: 5;
-    column-count: 5;
-    -webkit-column-width: 20%;
-    -moz-column-width: 20%;
-    column-width: 20%; 
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    padding:10px;
+    background-color: white;
+}
+.gallery2 {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 #certifications {
     padding:5%;
