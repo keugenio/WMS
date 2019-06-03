@@ -46,6 +46,9 @@ html {
 .bg-dark-fade{
     background-color: rgba(7, 58, 65, 0.5)
 }
+.bg-fixed{
+    background-attachment: fixed;
+}
 .text-shadow-black {
     text-shadow: 3px 3px #000000;
 }
@@ -90,11 +93,14 @@ html {
     height:auto;
     width:150px;
 }
-.thumb-75{
+.thumb-100{
     height:auto;
-    width:75px;
+    width:100px;
 }
-
+.pics {
+    margin-top:20px;
+    margin-bottom: 20px;
+}
 .carousel-body-left {
     position: absolute;
     right: 15%;
