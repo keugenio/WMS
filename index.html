@@ -66,38 +66,47 @@
     </nav>    
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron d-flex flex-column justify-content-center" style="margin-bottom: 0px; margin-top:0px;">
-      <div class="row h-100">
-        <div class="col-lg-6 col-sm-12 col-lg-offset-1 h-100">
-          <h1 class='display-1'>Wireless Management Services</h1>
-            <div class="display-4 font-weight-light p-5">Building High-Performance DAS Systems</div>
-            <div class="m-5">
-              <a class="btn btn-primary btn-lg flex-row"  href="#whatWeDo" ><span class="font-weight-light" style="font-size: 2em">
-                <span>Learn More</span>
-                <span id="down-arrow" class="glyphicon glyphicon glyphicon-share-alt" aria-hidden="true"></span> 
-                <span></a>   
-            </div>
-        </div>        
+    <div class="bg-offwhite">
+      <div class="jumbotron d-flex flex-column justify-content-center" style="margin-bottom: 0px; margin-top:0px;">
+        <div class="row h-100">
+          <div class="col-lg-8 col-sm-12 mx-auto text-center h-100">
+            <div id="heading" class='display-2 text-shadow-black'>Wireless Management Services</div>
+              <div id="heading_sub" class=" text-center text-shadow-black">Building High-Performance DAS Systems</div>
+              <div class="mx-auto w-100">
+                <a id="jumbtron_button" class="btn btn-sm"  href="#" >
+                  <span class="font-weight-light" style="font-size: 2em">
+                    Learn More
+                  </span>
+                </a>   
+              </div>
+          </div>        
+        </div>
       </div>
-
+      <div class="bottom-right">
+          <span id="down-arrow" class="glyphicon glyphicon-share-alt display-1 text-warning text-shadow-black-inverse" aria-hidden="true"></span> 
+      </div>            
     </div>
+
 
     <!-- What We Do -->
-    <div class="container-fluid bg-offwhite">
-      <div id="whatWeDo" class="container bg-offwhite text-dark flex-column d-flex justify-content-between">
+    <div class="bg-primary">
+      <div class="container-fluid bg-offwhite">
+        <div id="whatWeDo" class="container bg-offwhite text-dark flex-column d-flex justify-content-between" style="height:95vh">
 
-        <div class="display-2">What We Do</div>
-        <div class="display-5">
-          WMS builds high-performance DAS systems. In today’s society, everyone expects their wireless devices to not only work everywhere, but perform at a high level, at all times. Whether it be at work or at play, staying connected to friends and family is a part of life. WMS innovative designs and efficient management of large complicated projects ensures critical completion dates are met with high performing levels of service.
-        </div>
-        <div id="in-building-services" class="row d-flex justify-content-center bg-offwhite ">
-          <img src="./img/wms1.png" />
-          <img src="./img/das-project/das_project_8.png" />
-          <img src="./img/das-project/das_project_10.png" />
-          <img src="./img/salesforce.png" />
-        </div>
+          <div class="display-3 hidden-left">What We Do</div>
+          <div class="display-5">
+            WMS builds high-performance DAS systems. In today’s society, everyone expects their wireless devices to not only work everywhere, but perform at a high level, at all times. Whether it be at work or at play, staying connected to friends and family is a part of life. WMS innovative designs and efficient management of large complicated projects ensures critical completion dates are met with high performing levels of service.
+          </div>
+          <div id="in-building-services" class="row d-flex justify-content-center bg-offwhite ">
+            <img src="./img/wms1.png" />
+            <img src="./img/das-project/das_project_8.png" />
+            <img src="./img/das-project/das_project_10.png" />
+            <img src="./img/salesforce.png" />
+          </div>
+        </div>      
       </div>      
     </div>
+
 
       <!-- Project Design-->
     <div class="container-fluid pt-5 mt-5" style="margin-top:6em; padding-top: 6em">
@@ -393,65 +402,70 @@
     </div>
 
     <!-- Certifications -->
-    <div class="certifications bg-info container-fluid mt-5">
-        <div id="certifications" class="row">
+    <div class="certifications bg-info container-fluid mt-5 p-5">
+
           <div class ="row p-5">
-            <p class="display-3 text-white text-center">Certifications</p>
+            <p class="display-3 text-white text-center hidden-left">Certifications</p>
           </div>  
           <div class ="row p-5">
-            <ul class="text-white display-5">
-              <li>iBwave Certification Program BICSI</li>
-              <li>Certified In-Building Engineering Technologist</li>
-              <li>Vendor Certifications (DAS OEM, DC Power, Fiber, PIM, RF)</li>
-              <li>BICSI</li>
-              <li>Quality Assurance and Contractual Compliance Telcordia</li>
-              <li>Installation Quality for Telecom Facilities</li>                                                        
-            </ul>
+            <div class="col-8 offset-1">
+              <ul class="text-white display-5">
+                <li>iBwave Certification Program BICSI</li>
+                <li>Certified In-Building Engineering Technologist</li>
+                <li>Vendor Certifications (DAS OEM, DC Power, Fiber, PIM, RF)</li>
+                <li>BICSI</li>
+                <li>Quality Assurance and Contractual Compliance Telcordia</li>
+                <li>Installation Quality for Telecom Facilities</li>                                                        
+              </ul>
+            </div>
 
           </div>  
-        </div>        
+       
     </div>
 
     <!-- About Us-->
-    <div class="container bg-offwhite text-dark pt-4">
-        <p class="display-3">Who We Are </p>
-        <div class="row w-100">
-          <div class="col-lg-4 my-auto" align="center">
-            <div class="row w-100">
-              <div class="col-10 my-auto" align="center">
-                <img src="./img/profile.jpeg" style="height: 200px; width:auto; border-style: solid; border-width: 3px; border-radius: 100px"/>
-                <p class="display-4">Jay Inouye</p> 
-                <p class="display-5">Owner</p>
-              </div>
-              <div class="col-2 my-auto" align="right">
-                <div>
-                    <a href="tel:(925)785-3144">
-                      <span class="fa fa-phone" style="font-size:3em"/>
-                    </a>               
+    <div class="container-fluid bg-offwhite">
+      <div class="container bg-offwhite text-dark pt-4">
+          <p class="display-3 hidden-left">Who We Are </p>
+          <div class="row w-100">
+            <div class="col-lg-4 my-auto" align="center">
+              <div class="row w-100">
+                <div class="col-10 my-auto" align="center">
+                  <img src="./img/profile.jpeg" style="height: 200px; width:auto; border-style: solid; border-width: 3px; border-radius: 100px"/>
+                  <p class="display-4">Jay Inouye</p> 
+                  <p class="display-5">Owner</p>
                 </div>
-                <div>
-                  <a class="display-5" href="mailto:jayinouye@wirelessmanagementservices.com">
-                    <span class="glyphicon glyphicon-envelope" />
-                  </a>                 
-                </div>
-                <div>
-                  <a class="display-5" href="https://www.linkedin.com/in/jay-inouye-5ab1a422/">
-                    <span class="fa fa-linkedin" />
-                  </a>                 
-                </div>
-              </div>            
-            </div>      
+                <div class="col-2 my-auto" align="right">
+                  <div>
+                      <a href="tel:(925)785-3144">
+                        <span class="fa fa-phone" style="font-size:3em"/>
+                      </a>               
+                  </div>
+                  <div>
+                    <a class="display-5" href="mailto:jayinouye@wirelessmanagementservices.com">
+                      <span class="glyphicon glyphicon-envelope" />
+                    </a>                 
+                  </div>
+                  <div>
+                    <a class="display-5" href="https://www.linkedin.com/in/jay-inouye-5ab1a422/">
+                      <span class="fa fa-linkedin" />
+                    </a>                 
+                  </div>
+                </div>            
+              </div>      
+            </div>
+            <div class="col-lg-8 my-auto" align="center">
+              <blockquote class="blockquote text-left" style="font-size: 2em">
+                  Jay has been in the telecommunications industry for over 30 years and started WMS because of his attraction to complex DAS designs. He combines his experience in management, engineering, construction, and installation to customize each project appropriately. He graduated with an Engineering degree from DeVry Institute of Technology.<br>
+                  Having worked with all major U.S. wireless carriers, and having experience as an employee, consultant, and contractor, Jay understands all aspects of the implementation process. He specializes in program/project management of large and complex DAS deployments. Working closely with equipment manufacturers, he can create a custom design for any application.<br>
+                  Career highlights include involvement with Super Bowl activities, start-up wireless carrier, and network conversions in technology. Design and engineering effort for digital switches and small cells.      
+              </blockquote>           
+            </div>          
           </div>
-          <div class="col-lg-8 my-auto" align="center">
-            <blockquote class="blockquote text-left" style="font-size: 2em">
-                Jay has been in the telecommunications industry for over 30 years and started WMS because of his attraction to complex DAS designs. He combines his experience in management, engineering, construction, and installation to customize each project appropriately. He graduated with an Engineering degree from DeVry Institute of Technology.<br>
-                Having worked with all major U.S. wireless carriers, and having experience as an employee, consultant, and contractor, Jay understands all aspects of the implementation process. He specializes in program/project management of large and complex DAS deployments. Working closely with equipment manufacturers, he can create a custom design for any application.<br>
-                Career highlights include involvement with Super Bowl activities, start-up wireless carrier, and network conversions in technology. Design and engineering effort for digital switches and small cells.      
-            </blockquote>           
-          </div>          
-        </div>
 
+      </div>      
     </div>
+
 
     <!-- Footer -->
     <div id="contactWMS" class="container-fluid bg-dark text-white pt-4">

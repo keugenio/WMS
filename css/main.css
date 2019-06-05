@@ -3,25 +3,76 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 body {
-    padding-top:0px;
+    padding-top:30px;
 }
 html {
     scroll-behavior: smooth;
   }
 .jumbotron {
-    background: url('../img/jumbotron.jpg');
-    background-color: #cccccc; /* Used if the image is unavailable */
-    min-height: 100vh;/* You must set a specified height */
+    background-image: linear-gradient(to right, rgba(13,71,161, 0.75), rgba(66, 179, 244, 0.05)) , url('../img/jumbotron.jpg');
+    background-color: #fafafa; /* Used if the image is unavailable */
+    min-height: 95vh;/* You must set a specified height */
     background-position: top right; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; 
     background-attachment: fixed;
     color:#fafafa;   
+    clip-path: polygon(0 0, 0 100%, 100% 90vh, 100% 0);
 }
 .jumbotron.row {
     height: 100%;
     display: table-row;
+}
+#jumbtron_button{
+    padding:10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #007bff;
+    position: relative;
+    color: #fff;
+    transition: all .2s;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+#jumbtron_button:hover {
+    border-color:#fafafa;
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,.5);
+}
+
+#heading {
+    animation: moveInLeft 2s;
+    animation-timing-function: ease-in-out;
+}
+#heading_sub{
+    padding-top: 5%;
+    padding-bottom: 15%;
+    font-size: 3em;
+    font-weight: 200;
+    color:#fafafa;
+    animation: moveInRight 2s;
+    animation-timing-function: ease-in-out;
+}
+.hidden-left {
+    opacity: 0;
+}
+.hidden-right {
+    opacity: 0;
+}
+
+.bottom-right{
+    position: absolute;
+    bottom: 5px;
+    right:10px;
 }
 .display-5{
     font-size: 3em;
@@ -50,40 +101,21 @@ html {
     background-attachment: fixed;
 }
 .text-shadow-black {
-    text-shadow: 3px 3px #000000;
+    text-shadow: 3px 3px 3px #000000;
+}
+.text-shadow-black-inverse {
+    text-shadow: 3px -3px 3px #000000;
 }
 #email {
     text-decoration: none;
 }
 #whatWeDo {
-    height:100vh;
+    height:70vh;
     padding:20px;
 }
 #in-building-services img {
     height:75px;
     width:auto;
-}
-#servicesCarousel{
-    margin-top: 5%;
-}
-.servicesCarousel h2 {
-    font-size: 3em;
-    font-weight: 400;
-    border-width: 10px;    
-}
-
-#servicesCarousel .card-text{
-    font-size: 1.75em;
-}
-#servicesCarousel .card{
-    background-color: rgba(0, 0, 0, 0);
-    border:none;
-}
-#servicesCarousel .card .list-group-item {
-    background-color: rgba(255,255,255,0);
-    border:none;
-    font-size: 2.25em;
-    font-weight: 300;
 }
 
 .vh-75{
@@ -101,41 +133,8 @@ html {
     margin-top:20px;
     margin-bottom: 20px;
 }
-.carousel-body-left {
-    position: absolute;
-    right: 15%;
-    top: 25%;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: left;    
-}
-.carousel-caption{
-    top:25%!important;
-}
 
-.tech_background {
-    background: url('../img/tech_background.jpg');
-    background-color: #cccccc; /* Used if the image is unavailable */
-    background-size: cover;
-    background-repeat: no-repeat; /* Do not repeat the image */  
-    background-position: center center;
-    margin-top:5%;
-    background-blend-mode: overlay;
-    background-attachment: fixed;
-}
-.tech_background .card {
-    background: rgba(0, 0, 0, 0);
-    border: none; 
-}
-.tech_background .list-group-item {
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    font-size: 2.25em;
-    font-weight: 300;
-}
+
 .projects .row {
     margin-bottom: 5%;
 }
@@ -159,22 +158,6 @@ html {
     color:#fafafa;     
 }
 
-.gallery {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    padding:10px;
-    background-color: white;
-}
-.gallery2 {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    padding:10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 #certifications {
     padding:5%;
 }
@@ -187,3 +170,61 @@ html {
     -moz-transform: rotate(90deg); 
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); //For IE support
 }
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-180px)
+    }
+
+    50%{
+        opacity: .5;
+    }
+    80%{
+        opacity: .8;
+        transform: translateX(5px)
+    }    
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+.moveInLeftElement {
+    animation: moveInLeft 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px)
+    }
+
+    50%{
+        opacity: .5;
+    }
+    80%{
+        opacity: .8;
+        transform: translateX(-5px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+    85%{
+        opacity: .85;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
