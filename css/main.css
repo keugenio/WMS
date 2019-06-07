@@ -26,43 +26,40 @@ html {
   background-attachment: fixed;
   color: #fafafa;
   clip-path: polygon(0 0, 0 100%, 100% 90vh, 100% 0); }
-
-.jumbotron.row {
-  height: 100%;
-  display: table-row; }
+  .jumbotron.row {
+    height: 100%;
+    display: table-row; }
 
 #jumbtron_button {
   padding: 10px 20px;
   border-radius: 20px;
   text-transform: uppercase;
   display: inline-block;
-  background-color: #0d47a1;
+  background-color: #42B3F4;
   position: relative;
-  color: #fafafa;
+  color: #0d47a1;
   transition: all .2s;
   animation-name: fadeIn;
   animation-duration: 2s;
   animation-timing-function: ease-in-out; }
-
-#jumbtron_button:hover {
-  border-color: #fafafa;
-  background-color: #1366e8;
-  color: #FFFFFF;
-  transform: translateY(-3px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); }
+  #jumbtron_button:hover {
+    border-color: #fafafa;
+    background-color: #1366e8;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); }
 
 #heading {
   animation: moveInLeft 2s;
   animation-timing-function: ease-in-out; }
-
-#heading_sub {
-  padding-top: 5%;
-  padding-bottom: 15%;
-  font-size: 3em;
-  font-weight: 200;
-  color: #fafafa;
-  animation: moveInRight 2s;
-  animation-timing-function: ease-in-out; }
+  #heading_sub {
+    padding-top: 5%;
+    padding-bottom: 15%;
+    font-size: 3em;
+    font-weight: 200;
+    color: #fafafa;
+    animation: moveInRight 2s;
+    animation-timing-function: ease-in-out; }
 
 .hidden-left {
   opacity: 0; }
@@ -141,22 +138,20 @@ html {
 
 .clients {
   margin-top: 100px; }
-
-.clients .das-head-end-image {
-  background: url("../img/das-head-end-project.jpg");
-  background-color: #cccccc;
-  /* Used if the image is unavailable */
-  background-size: contain;
-  background-repeat: no-repeat;
-  /* Do not repeat the image */ }
-
-.clients .clients-side-image {
-  background: url("../img/clients.jpg");
-  background-color: #cccccc;
-  /* Used if the image is unavailable */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  color: #fafafa; }
+  .clients .das-head-end-image {
+    background: url("../img/das-head-end-project.jpg");
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* Do not repeat the image */ }
+  .clients .clients-side-image {
+    background: url("../img/clients.jpg");
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    color: #fafafa; }
 
 #certifications {
   padding: 5%; }
@@ -166,9 +161,16 @@ html {
 
 #down-arrow {
   display: block;
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
   -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
+  /* Safari prior 9.0 */
+  transform: rotate(90deg);
+  /* Standard syntax */ }
+
+.moveInLeftElement {
+  animation: moveInLeft 2s;
+  animation-timing-function: ease-in-out; }
 
 @keyframes moveInLeft {
   0% {
@@ -182,10 +184,6 @@ html {
   100% {
     opacity: 1;
     transform: translateX(0); } }
-
-.moveInLeftElement {
-  animation: moveInLeft 2s;
-  animation-timing-function: ease-in-out; }
 
 @keyframes moveInRight {
   0% {

@@ -1,0 +1,14 @@
+#heading {
+    animation: moveInLeft 2s;
+    animation-timing-function: ease-in-out;
+
+    &_sub{
+        padding-top: 5%;
+        padding-bottom: 15%;
+        font-size: 3em;
+        font-weight: 200;
+        color:$color-off-white;
+        animation: moveInRight 2s;
+        animation-timing-function: ease-in-out;        
+    }
+}

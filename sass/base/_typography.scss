@@ -1,0 +1,19 @@
+.text{
+    &-shadow-black {
+        text-shadow: 3px 3px 3px $color-black;
+    }
+    &-shadow-black-inverse {
+        text-shadow: 3px -3px 3px $color-black;
+    }
+}
+
+.display {
+    &-5{
+        font-size: 3em;
+        font-weight: 300;
+    }
+    &-6{
+        font-size: 2em;
+        font-weight: 300;        
+    }
+}

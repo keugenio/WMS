@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    padding-top:30px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+.vh{
+    &-75{
+        height:75vh;
+    }
+}
+
+.bg{
+    &-offwhite{
+        background-color: $color-off-white;        
+    }
+    &-dark-fade{
+        background-color: rgba($color-black, 0.5)
+    }
+    &-fixed{
+        background-attachment: fixed;
+    }
+
+}
