@@ -1,230 +1,211 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
 body {
-    padding-top:30px;
-}
+  padding-top: 30px; }
+
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth; }
+
 .jumbotron {
-    background-image: linear-gradient(to right, rgba(13,71,161, 0.75), rgba(66, 179, 244, 0.05)) , url('../img/jumbotron.jpg');
-    background-color: #fafafa; /* Used if the image is unavailable */
-    min-height: 95vh;/* You must set a specified height */
-    background-position: top right; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; 
-    background-attachment: fixed;
-    color:#fafafa;   
-    clip-path: polygon(0 0, 0 100%, 100% 90vh, 100% 0);
-}
+  background-image: linear-gradient(to right, rgba(13, 71, 161, 0.75), rgba(66, 179, 244, 0.05)), url("../img/jumbotron.jpg");
+  background-color: #fafafa;
+  /* Used if the image is unavailable */
+  min-height: 95vh;
+  /* You must set a specified height */
+  background-position: top right;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fafafa;
+  clip-path: polygon(0 0, 0 100%, 100% 90vh, 100% 0); }
+
 .jumbotron.row {
-    height: 100%;
-    display: table-row;
-}
-#jumbtron_button{
-    padding:10px 20px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    display: inline-block;
-    background-color: #007bff;
-    position: relative;
-    color: #fff;
-    transition: all .2s;
-    animation-name: fadeIn;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-}
+  height: 100%;
+  display: table-row; }
+
+#jumbtron_button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #0d47a1;
+  position: relative;
+  color: #fafafa;
+  transition: all .2s;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; }
 
 #jumbtron_button:hover {
-    border-color:#fafafa;
-    transform: translateY(-3px);
-    box-shadow: 0px 10px 20px rgba(0,0,0,.5);
-}
+  border-color: #fafafa;
+  background-color: #1366e8;
+  color: #FFFFFF;
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); }
 
 #heading {
-    animation: moveInLeft 2s;
-    animation-timing-function: ease-in-out;
-}
-#heading_sub{
-    padding-top: 5%;
-    padding-bottom: 15%;
-    font-size: 3em;
-    font-weight: 200;
-    color:#fafafa;
-    animation: moveInRight 2s;
-    animation-timing-function: ease-in-out;
-}
+  animation: moveInLeft 2s;
+  animation-timing-function: ease-in-out; }
+
+#heading_sub {
+  padding-top: 5%;
+  padding-bottom: 15%;
+  font-size: 3em;
+  font-weight: 200;
+  color: #fafafa;
+  animation: moveInRight 2s;
+  animation-timing-function: ease-in-out; }
+
 .hidden-left {
-    opacity: 0;
-}
+  opacity: 0; }
+
 .hidden-right {
-    opacity: 0;
-}
+  opacity: 0; }
 
-.bottom-right{
-    position: absolute;
-    bottom: 5px;
-    right:10px;
-}
-.display-5{
-    font-size: 3em;
-    font-weight: 300;
-}
-.display-6{
-    font-size: 2em;
-    font-weight: 300;
-}
+.bottom-right {
+  position: absolute;
+  bottom: 5px;
+  right: 10px; }
+
+.display-5 {
+  font-size: 3em;
+  font-weight: 300; }
+
+.display-6 {
+  font-size: 2em;
+  font-weight: 300; }
+
 #navbar {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    display: block;
-    transition: top 0.3s;
-    padding-left: 5%;
-    padding-right:5%;
-}
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  padding-left: 5%;
+  padding-right: 5%; }
+
 .bg-offwhite {
-    background-color: #fafafa;
-}
-.bg-dark-fade{
-    background-color: rgba(7, 58, 65, 0.5)
-}
-.bg-fixed{
-    background-attachment: fixed;
-}
+  background-color: #fafafa; }
+
+.bg-dark-fade {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.bg-fixed {
+  background-attachment: fixed; }
+
 .text-shadow-black {
-    text-shadow: 3px 3px 3px #000000;
-}
+  text-shadow: 3px 3px 3px #000000; }
+
 .text-shadow-black-inverse {
-    text-shadow: 3px -3px 3px #000000;
-}
+  text-shadow: 3px -3px 3px #000000; }
+
 #email {
-    text-decoration: none;
-}
+  text-decoration: none; }
+
 #whatWeDo {
-    height:70vh;
-    padding:20px;
-}
+  height: 70vh;
+  padding: 20px; }
+
 #in-building-services img {
-    height:75px;
-    width:auto;
-}
+  height: 75px;
+  width: auto; }
 
-.vh-75{
-    height:75vh;
-}
-.thumb-150{
-    height:auto;
-    width:150px;
-}
-.thumb-100{
-    height:auto;
-    width:100px;
-}
+.vh-75 {
+  height: 75vh; }
+
+.thumb-150 {
+  height: auto;
+  width: 150px; }
+
+.thumb-100 {
+  height: auto;
+  width: 100px; }
+
 .pics {
-    margin-top:20px;
-    margin-bottom: 20px;
-}
-
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .projects .row {
-    margin-bottom: 5%;
-}
-.projects p-5 {
-    padding-top:5%;
-}
-.clients{
-    margin-top: 100px;
-}
+  margin-bottom: 5%; }
 
-.clients .das-head-end-image{
-    background: url('../img/das-head-end-project.jpg');
-    background-color: #cccccc; /* Used if the image is unavailable */
-    background-size: contain;
-    background-repeat: no-repeat; /* Do not repeat the image */  
-}
-.clients .clients-side-image{
-    background: url('../img/clients.jpg');
-    background-color: #cccccc; /* Used if the image is unavailable */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    color:#fafafa;     
-}
+.projects p-5 {
+  padding-top: 5%; }
+
+.clients {
+  margin-top: 100px; }
+
+.clients .das-head-end-image {
+  background: url("../img/das-head-end-project.jpg");
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* Do not repeat the image */ }
+
+.clients .clients-side-image {
+  background: url("../img/clients.jpg");
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  color: #fafafa; }
 
 #certifications {
-    padding:5%;
-}
+  padding: 5%; }
+
 #contactWMS i {
-    font-size: medium;
-  }
+  font-size: medium; }
+
 #down-arrow {
-    display:block;
-    -webkit-transform: rotate(90deg); 
-    -moz-transform: rotate(90deg); 
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); //For IE support
-}
+  display: block;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
 
 @keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-180px)
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-180px); }
+  50% {
+    opacity: .5; }
+  80% {
+    opacity: .8;
+    transform: translateX(5px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
-    50%{
-        opacity: .5;
-    }
-    80%{
-        opacity: .8;
-        transform: translateX(5px)
-    }    
-    100%{
-        opacity: 1;
-        transform: translateX(0)
-    }
-}
 .moveInLeftElement {
-    animation: moveInLeft 2s;
-    animation-timing-function: ease-in-out;
-}
+  animation: moveInLeft 2s;
+  animation-timing-function: ease-in-out; }
 
 @keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100px)
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  50% {
+    opacity: .5; }
+  80% {
+    opacity: .8;
+    transform: translateX(-5px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
-    50%{
-        opacity: .5;
-    }
-    80%{
-        opacity: .8;
-        transform: translateX(-5px)
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0)
-    }
-}
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    50%{
-        opacity: 0;
-    }
-    85%{
-        opacity: .85;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  85% {
+    opacity: .85; }
+  100% {
+    opacity: 1; } }
