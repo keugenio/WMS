@@ -1,0 +1,62 @@
+.section-what-we-do{
+    min-height: 95vh;
+    background-color: $color-off-white;
+    @include lower_triangle;
+}
+#in-building-services img {
+    height:75px;
+    width:auto;
+}
+.projects {
+    &  .row {
+        margin-bottom: 5%;
+    }
+    p-5 {
+        padding-top:5%;
+    }
+}
+
+.clients{
+    margin-top: 100px;
+    
+    & .das-head-end-image{
+        background: url('../img/das-head-end-project.jpg');
+        background-color: #cccccc; /* Used if the image is unavailable */
+        background-size: contain;
+        background-repeat: no-repeat; /* Do not repeat the image */  
+    }
+    &  .clients-side-image{
+        background: url('../img/clients.jpg');
+        background-color: #cccccc; /* Used if the image is unavailable */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        color:$color-off-white;     
+    }
+}s
+
+
+#contactWMS i {
+    font-size: medium;
+}
+
+.certifications {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary);
+}
+
+#down-arrow {
+    display:block;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari prior 9.0 */
+    transform: rotate(90deg); /* Standard syntax */
+}
+
+.bg-project-design {
+    background-image:linear-gradient(to right, rgba($color-dark,.75), rgba($color-primary-light,.75)), url('../img/project_design.jpg') ;
+}
+
+.bg-project-management {
+    background-image:linear-gradient(to left, rgba($color-dark,.75), rgba($color-primary-light,.75)), url('../img/project_mgmt.jpg') ;
+}
+
+.bg-construction {
+    background-image:linear-gradient(to right, rgba($color-dark,.75), rgba($color-primary-light,.75)), url('../img/construction.jpg') ;
+}
