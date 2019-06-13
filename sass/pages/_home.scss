@@ -6,6 +6,9 @@
 #in-building-services img {
     height:75px;
     width:auto;
+    @include response-phone {
+        height: 50px;
+    }
 }
 .projects {
     &  .row {
@@ -59,4 +62,43 @@
 
 .bg-construction {
     background-image:linear-gradient(to right, rgba($color-dark,.75), rgba($color-primary-light,.75)), url('../img/construction.jpg') ;
+}
+.img-layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    @include response-phone {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }  
+}
+.project {
+    @include response-phone {
+        padding-bottom: 25px;
+
+    }
+}
+.response-not-phone {
+    @include response-phone {
+        display:none;
+    }
+}
+.response-only-phone {
+    display: none;
+    @include response-phone {
+        display:block;
+    }
+}
+
+#DASOEMFamiliarity {
+
+    & h1 {
+        font-size: 4.5rem;        
+        @include response-phone {
+            font-size: 3.5rem;
+            font-weight: 400;
+            text-shadow: 1px 1px 3px rgba($color-primary-light, .5);
+        }        
+    }
 }

@@ -38,18 +38,43 @@
     &-150{
         height:auto;
         width:150px;
+        @include response-phone {
+            width:75px;
+        }
     }
     &-100{
         height:auto;
         width:100px;
+        @include response-phone {
+            width:50px;
+        }        
     }
+    &-75{
+        height:auto;
+        width:75px;       
+    } 
+    &-50{
+        height:auto;
+        width:50px;
+       
+    }    
 }
 
 .pics {
-    margin-top:20px;
-    margin-bottom: 20px;
+    margin:20px;
 }
 
+.flex-direction {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @include response-phone {
+        flex-direction: col;       
+    }
+}
 
 
 

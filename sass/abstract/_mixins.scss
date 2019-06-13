@@ -1,3 +1,16 @@
 @mixin lower_triangle {
     clip-path: polygon(0 0, 0 100%, 100% 90vh, 100% 0);
 }
+
+// media query manager
+/*
+    0-600px: phone
+    600:900px; tablet
+    900-1200px; tablet landscape
+    [1200-1800] is where normal styles apply
+    1800px+: big desktop
+*/
+
+@mixin response-phone {
+    @media (max-width:600px) { @content };
+}

@@ -18,6 +18,11 @@
     }
 }
 
+.heading-white {
+    font-size: 3.5rem;
+    color:$color-off-white;
+}
+
 .heading-secondary {
     font-size:3.5rem;
     text-transform: uppercase;
@@ -55,3 +60,19 @@ ul li {
     margin-right:15px;
     display: block;
    }
+
+.about-blockquote {
+    margin:5%;
+    font-size: 1.5rem;
+    border-left: solid thin $color-dark;
+    padding-left: 25px;
+    text-align:left;
+    @include response-phone {
+        text-align: justify;
+        border-left:none;
+        padding:0px;
+    }
+}
+.footer {
+    font-size: .75em;
+}
