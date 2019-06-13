@@ -4,6 +4,12 @@
     900-1200px; tablet landscape
     [1200-1800] is where normal styles apply
     1800px+: big desktop
+
+$breakpoing arguement choices:
+- phone
+-tab-port
+-tab-land
+big-desktop
 */
 .moveInLeftElement {
   animation: moveInLeft 2s;
@@ -50,11 +56,16 @@
   padding: 0px;
   box-sizing: border-box; }
 
-body {
-  padding-top: 30px; }
+@media (min-width: 1800px) {
+  body {
+    width: 75vw;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: #FFFFFF; } }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-size: 62.5%; }
 
 .vh-75 {
   height: 75vh; }
@@ -96,6 +107,9 @@ html {
   background-clip: text;
   color: transparent;
   letter-spacing: .2rem; }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
 
 .subtext {
   font-size: 2rem;
@@ -113,12 +127,21 @@ ul li {
   font-weight: 200;
   display: flex; }
 
+@media (max-width: 37.5em) {
+  .custom_list li {
+    line-height: 1;
+    margin-bottom: 15px; } }
+
 .custom_list li:before {
   font-family: 'FontAwesome';
   content: "\f192";
   color: #FFFFFF;
   margin-right: 15px;
   display: block; }
+  @media (max-width: 37.5em) {
+    .custom_list li:before {
+      top: 5px;
+      position: relative; } }
 
 .about-blockquote {
   margin: 5%;
@@ -126,11 +149,12 @@ ul li {
   border-left: solid thin #263238;
   padding-left: 25px;
   text-align: left; }
-  @media (max-width: 600px) {
+  @media (max-width: 37.5em) {
     .about-blockquote {
       text-align: justify;
       border-left: none;
-      padding: 0px; } }
+      padding: 0px;
+      line-height: 1.2; } }
 
 .footer {
   font-size: .75em; }
@@ -149,6 +173,9 @@ ul li {
   background-attachment: fixed;
   color: #fafafa;
   clip-path: polygon(0 0, 0 100%, 100% 90vh, 100% 0); }
+  @media (min-width: 1800px) {
+    .jumbotron {
+      clip-path: polygon(polygon(0 0, 100% 0, 100% 90%, 0 96%)); } }
   .jumbotron.row {
     height: 100%;
     display: table-row; }
@@ -183,7 +210,11 @@ ul li {
 
 #heading {
   animation: moveInLeft 2s;
-  animation-timing-function: ease-in-out; }
+  animation-timing-function: ease-in-out;
+  font-size: 3rem; }
+  @media (max-width: 37.5em) {
+    #heading {
+      font-size: 2.75rem; } }
   #heading_sub {
     padding-top: 5%;
     padding-bottom: 15%;
@@ -192,16 +223,45 @@ ul li {
     color: #fafafa;
     animation: moveInRight 2s;
     animation-timing-function: ease-in-out; }
+    @media (max-width: 37.5em) {
+      #heading_sub {
+        font-size: 2.5rem; } }
+  @media (max-width: 56.25) {
+    #heading {
+      font-size: 4rem; } }
+  @media (max-width: 75em) {
+    #heading {
+      font-size: 4rem; } }
+  @media (min-width: 1800px) {
+    #heading {
+      font-size: 5rem; } }
 
 .section-what-we-do {
-  min-height: 95vh;
+  display: flex;
   background-color: #fafafa;
-  clip-path: polygon(0 0, 0 100%, 100% 90vh, 100% 0); }
+  clip-path: polygon(0 0, 0 100%, 100% 90vh, 100% 0);
+  height: 85vh; }
+  @media (min-width: 1800px) {
+    .section-what-we-do {
+      clip-path: polygon(polygon(0 0, 100% 0, 100% 90%, 0 96%)); } }
+  @media (max-width: 37.5em) {
+    .section-what-we-do {
+      clip-path: none;
+      height: 100%;
+      margin-top: 5vh;
+      background-color: #FFFFFF; } }
+  @media (min-width: 1800px) {
+    .section-what-we-do {
+      height: 65vh; } }
+  .section-what-we-do .subtext {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    margin-bottom: 20px; }
 
 #in-building-services img {
   height: 75px;
   width: auto; }
-  @media (max-width: 600px) {
+  @media (max-width: 37.5em) {
     #in-building-services img {
       height: 50px; } }
 
@@ -236,7 +296,6 @@ s
   background-image: linear-gradient(to right, #4285F4, #0d47a1); }
 
 #down-arrow {
-  display: block;
   -ms-transform: rotate(90deg);
   /* IE 9 */
   -webkit-transform: rotate(90deg);
@@ -246,40 +305,98 @@ s
 
 .bg-project-design {
   background-image: linear-gradient(to right, rgba(38, 50, 56, 0.75), rgba(66, 133, 244, 0.75)), url("../img/project_design.jpg"); }
+  @media (max-width: 37.5em) {
+    .bg-project-design div p {
+      line-height: 1; } }
+  @media (max-width: 37.5em) {
+    .bg-project-design div p.subtext-light {
+      line-height: 1.2; } }
+  @media (max-width: 37.5em) and (max-width: 37.5em) {
+    .bg-project-design div p.subtext-light {
+      font-size: 1.75rem;
+      line-height: 1.2; } }
 
 .bg-project-management {
   background-image: linear-gradient(to left, rgba(38, 50, 56, 0.75), rgba(66, 133, 244, 0.75)), url("../img/project_mgmt.jpg"); }
+  @media (max-width: 37.5em) {
+    .bg-project-management div p {
+      line-height: 1.2; } }
+  @media (max-width: 37.5em) {
+    .bg-project-management div p.subtext-light {
+      line-height: 1.2;
+      font-size: 1.75rem; } }
 
 .bg-construction {
   background-image: linear-gradient(to right, rgba(38, 50, 56, 0.75), rgba(66, 133, 244, 0.75)), url("../img/construction.jpg"); }
+  @media (max-width: 37.5em) {
+    .bg-construction div p {
+      line-height: 1.2; } }
+  @media (max-width: 37.5em) {
+    .bg-construction div p.subtext-light {
+      line-height: 1.2; } }
+  @media (max-width: 37.5em) {
+    .bg-construction .heading-white {
+      font-size: 3rem;
+      line-height: .95; } }
+
+@media (max-width: 37.5em) {
+  #DASOEMFamiliarity h1 {
+    line-height: 1; } }
+
+.profile {
+  height: 200px;
+  width: auto;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 100px; }
+  @media (max-width: 37.5em) {
+    .profile {
+      margin-top: 25px; } }
 
 .img-layout {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center; }
-  @media (max-width: 600px) {
+  align-items: center;
+  flex-wrap: wrap; }
+  @media (max-width: 56.25) {
     .img-layout {
-      flex-direction: row;
-      flex-wrap: wrap; } }
+      flex-direction: row; } }
+  @media (max-width: 75em) {
+    .img-layout {
+      flex-direction: row; } }
+  @media (max-width: 37.5em) {
+    .img-layout {
+      flex-direction: row; } }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .project {
     padding-bottom: 25px; } }
 
-@media (max-width: 600px) {
-  .response-not-phone {
-    display: none; } }
-
 .response-only-phone {
-  display: none; }
-  @media (max-width: 600px) {
+  display: none;
+  width: 100%; }
+  @media (max-width: 37.5em) {
+    .response-only-phone {
+      display: block; } }
+  @media (max-width: 56.25) {
+    .response-only-phone {
+      display: block; } }
+  @media (max-width: 75em) {
     .response-only-phone {
       display: block; } }
 
+@media (max-width: 37.5em) {
+  .response-not-phone {
+    display: none; } }
+
+@media (max-width: 75em) {
+  .response-not-phone {
+    display: none; } }
+
 #DASOEMFamiliarity h1 {
   font-size: 4.5rem; }
-  @media (max-width: 600px) {
+  @media (max-width: 37.5em) {
     #DASOEMFamiliarity h1 {
       font-size: 3.5rem;
       font-weight: 400;
@@ -292,9 +409,9 @@ s
   opacity: 0; }
 
 .bottom-right {
-  position: absolute;
-  bottom: 5px;
-  right: 10px; }
+  text-align: right;
+  margin-top: -10vh;
+  margin-right: 10px; }
 
 #email {
   text-decoration: none; }
@@ -302,14 +419,14 @@ s
 .thumb-150 {
   height: auto;
   width: 150px; }
-  @media (max-width: 600px) {
+  @media (max-width: 37.5em) {
     .thumb-150 {
       width: 75px; } }
 
 .thumb-100 {
   height: auto;
   width: 100px; }
-  @media (max-width: 600px) {
+  @media (max-width: 37.5em) {
     .thumb-100 {
       width: 50px; } }
 
@@ -330,6 +447,6 @@ s
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
-  @media (max-width: 600px) {
+  @media (max-width: 37.5em) {
     .flex-direction {
       flex-direction: col; } }

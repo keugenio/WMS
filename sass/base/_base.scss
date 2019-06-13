@@ -5,10 +5,16 @@
     box-sizing: border-box;
 }
 body {
-    padding-top:30px;
+    @include response(bd) {
+        width: 75vw;
+        margin-left: auto!important;
+        margin-right: auto!important;
+        background-color: $color-white;        
+    }
 }
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
   }
 
 .vh{

@@ -33,6 +33,9 @@
     background-clip:text;
     color:transparent;
     letter-spacing: .2rem;
+    @include response(phone){
+        font-size: 2.5rem;
+    }
 }
 .subtext {
     font-size: 2rem;
@@ -50,16 +53,27 @@ ul li {
     font-size: 2rem;
     font-weight: 200;
     display: flex;
-
-
 }
-.custom_list li:before {
+.custom_list {
+    & li {
+        @include response(phone) {
+            line-height: 1;
+            margin-bottom: 15px;        
+        }
+    }
+    & li:before {
     font-family: 'FontAwesome';
     content: "\f192";
     color: $color-white;
     margin-right:15px;
     display: block;
+
+    @include response(phone){
+        top: 5px;
+        position: relative;    
+    }
    }
+}
 
 .about-blockquote {
     margin:5%;
@@ -67,10 +81,11 @@ ul li {
     border-left: solid thin $color-dark;
     padding-left: 25px;
     text-align:left;
-    @include response-phone {
+    @include response(phone) {
         text-align: justify;
         border-left:none;
         padding:0px;
+        line-height: 1.2;
     }
 }
 .footer {

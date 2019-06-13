@@ -1,7 +1,11 @@
 #heading {
     animation: moveInLeft 2s;
     animation-timing-function: ease-in-out;
+    font-size: 3rem;
 
+    @include response(phone){
+        font-size: 2.75rem;
+    }     
     &_sub{
         padding-top: 5%;
         padding-bottom: 15%;
@@ -9,6 +13,18 @@
         font-weight: 200;
         color:$color-off-white;
         animation: moveInRight 2s;
-        animation-timing-function: ease-in-out;        
+        animation-timing-function: ease-in-out;  
+        @include response(phone){
+            font-size: 2.5rem;
+        }      
+    }    
+    @include response(tabPort){
+        font-size: 4rem;
     }
+    @include response(tabLand){
+        font-size: 4rem;
+    }
+    @include response(bd){
+        font-size: 5rem;
+    }     
 }
