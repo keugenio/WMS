@@ -22,13 +22,13 @@ big-desktop
 
 @mixin response($breakpoint) {
     @if $breakpoint == phone {
-        @media (max-width:37.5em) { @content }; //600px
+        @media (max-width:600px) { @content }; //600px
     }
     @if $breakpoint == tabPort {
-        @media (max-width:56.25) { @content }; //900px
+        @media (max-width:900px) { @content }; //900px
     }
     @if $breakpoint == tabLand {
-        @media (max-width:75em) { @content }; //1200px
+        @media (max-width:1200px) { @content }; //1200px
     }
     @if $breakpoint == bd {
         @media (min-width:1800px) { @content };

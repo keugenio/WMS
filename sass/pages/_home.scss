@@ -10,13 +10,23 @@
         margin-top: 5vh;
         background-color: $color-white;
     }
+    @include response(tabLand){
+        height: 75vh;
+    }
     @include response(bd) {
         height: 65vh;
     }
     & .subtext {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         line-height: 1.25;
         margin-bottom: 20px;
+
+        @include response(tabPort){
+            font-size: 2rem;
+        }
+        @include response(tabLand){
+            font-size: 2rem;
+        }        
     }
    
 }
@@ -165,27 +175,20 @@
     }
     @include response(tabPort) {
         display:block;
-    }
-    @include response(tabLand) {
-        display:block;
-    }
-    @include response(bigDesktop) {
-        display:block;
-    }            
+    }    
+          
 }
 .response-not-phone {
+    display: block;
     @include response(phone) {
         display:none;
     }
-    @include response(tab-Port) {
+    @include response(tabPort) {
         display:none;
     } 
-    @include response(tabLand) {
-        display:none;
-    } 
-    @include response(bigDesktop) {
-        display:none;
-    }           
+    
+
+           
 
 }
 #DASOEMFamiliarity {

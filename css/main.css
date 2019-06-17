@@ -107,7 +107,7 @@ html {
   background-clip: text;
   color: transparent;
   letter-spacing: .2rem; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .heading-secondary {
       font-size: 2.5rem; } }
 
@@ -127,7 +127,7 @@ ul li {
   font-weight: 200;
   display: flex; }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   .custom_list li {
     line-height: 1;
     margin-bottom: 15px; } }
@@ -138,7 +138,7 @@ ul li {
   color: #FFFFFF;
   margin-right: 15px;
   display: block; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .custom_list li:before {
       top: 5px;
       position: relative; } }
@@ -149,7 +149,7 @@ ul li {
   border-left: solid thin #263238;
   padding-left: 25px;
   text-align: left; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .about-blockquote {
       text-align: justify;
       border-left: none;
@@ -179,6 +179,12 @@ ul li {
   .jumbotron.row {
     height: 100%;
     display: table-row; }
+  @media (max-width: 600px) {
+    .jumbotron {
+      background-image: linear-gradient(to right, rgba(13, 71, 161, 0.75), rgba(66, 179, 244, 0.05)), url("../img/jumbotron_phone.jpg"); } }
+  @media (max-width: 1200px) {
+    .jumbotron {
+      background-image: linear-gradient(to right, rgba(13, 71, 161, 0.75), rgba(66, 179, 244, 0.05)), url("../img/jumbotron_phone.jpg"); } }
 
 #jumbtron_button {
   padding: 10px 20px;
@@ -212,7 +218,7 @@ ul li {
   animation: moveInLeft 2s;
   animation-timing-function: ease-in-out;
   font-size: 3rem; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     #heading {
       font-size: 2.75rem; } }
   #heading_sub {
@@ -223,13 +229,13 @@ ul li {
     color: #fafafa;
     animation: moveInRight 2s;
     animation-timing-function: ease-in-out; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 600px) {
       #heading_sub {
         font-size: 2.5rem; } }
-  @media (max-width: 56.25) {
+  @media (max-width: 900px) {
     #heading {
       font-size: 4rem; } }
-  @media (max-width: 75em) {
+  @media (max-width: 1200px) {
     #heading {
       font-size: 4rem; } }
   @media (min-width: 1800px) {
@@ -244,24 +250,33 @@ ul li {
   @media (min-width: 1800px) {
     .section-what-we-do {
       clip-path: polygon(polygon(0 0, 100% 0, 100% 90%, 0 96%)); } }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .section-what-we-do {
       clip-path: none;
       height: 100%;
       margin-top: 5vh;
       background-color: #FFFFFF; } }
+  @media (max-width: 1200px) {
+    .section-what-we-do {
+      height: 75vh; } }
   @media (min-width: 1800px) {
     .section-what-we-do {
       height: 65vh; } }
   .section-what-we-do .subtext {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     line-height: 1.25;
     margin-bottom: 20px; }
+    @media (max-width: 900px) {
+      .section-what-we-do .subtext {
+        font-size: 2rem; } }
+    @media (max-width: 1200px) {
+      .section-what-we-do .subtext {
+        font-size: 2rem; } }
 
 #in-building-services img {
   height: 75px;
   width: auto; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     #in-building-services img {
       height: 50px; } }
 
@@ -305,41 +320,41 @@ s
 
 .bg-project-design {
   background-image: linear-gradient(to right, rgba(38, 50, 56, 0.75), rgba(66, 133, 244, 0.75)), url("../img/project_design.jpg"); }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .bg-project-design div p {
       line-height: 1; } }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .bg-project-design div p.subtext-light {
       line-height: 1.2; } }
-  @media (max-width: 37.5em) and (max-width: 37.5em) {
+  @media (max-width: 600px) and (max-width: 600px) {
     .bg-project-design div p.subtext-light {
       font-size: 1.75rem;
       line-height: 1.2; } }
 
 .bg-project-management {
   background-image: linear-gradient(to left, rgba(38, 50, 56, 0.75), rgba(66, 133, 244, 0.75)), url("../img/project_mgmt.jpg"); }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .bg-project-management div p {
       line-height: 1.2; } }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .bg-project-management div p.subtext-light {
       line-height: 1.2;
       font-size: 1.75rem; } }
 
 .bg-construction {
   background-image: linear-gradient(to right, rgba(38, 50, 56, 0.75), rgba(66, 133, 244, 0.75)), url("../img/construction.jpg"); }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .bg-construction div p {
       line-height: 1.2; } }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .bg-construction div p.subtext-light {
       line-height: 1.2; } }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .bg-construction .heading-white {
       font-size: 3rem;
       line-height: .95; } }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #DASOEMFamiliarity h1 {
     line-height: 1; } }
 
@@ -349,7 +364,7 @@ s
   border-style: solid;
   border-width: 3px;
   border-radius: 100px; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .profile {
       margin-top: 25px; } }
 
@@ -359,44 +374,42 @@ s
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap; }
-  @media (max-width: 56.25) {
+  @media (max-width: 900px) {
     .img-layout {
       flex-direction: row; } }
-  @media (max-width: 75em) {
+  @media (max-width: 1200px) {
     .img-layout {
       flex-direction: row; } }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .img-layout {
       flex-direction: row; } }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   .project {
     padding-bottom: 25px; } }
 
 .response-only-phone {
   display: none;
   width: 100%; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .response-only-phone {
       display: block; } }
-  @media (max-width: 56.25) {
-    .response-only-phone {
-      display: block; } }
-  @media (max-width: 75em) {
+  @media (max-width: 900px) {
     .response-only-phone {
       display: block; } }
 
-@media (max-width: 37.5em) {
-  .response-not-phone {
-    display: none; } }
-
-@media (max-width: 75em) {
-  .response-not-phone {
-    display: none; } }
+.response-not-phone {
+  display: block; }
+  @media (max-width: 600px) {
+    .response-not-phone {
+      display: none; } }
+  @media (max-width: 900px) {
+    .response-not-phone {
+      display: none; } }
 
 #DASOEMFamiliarity h1 {
   font-size: 4.5rem; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     #DASOEMFamiliarity h1 {
       font-size: 3.5rem;
       font-weight: 400;
@@ -410,7 +423,7 @@ s
 
 .bottom-right {
   text-align: right;
-  margin-top: -10vh;
+  margin-top: -17vh;
   margin-right: 10px; }
 
 #email {
@@ -419,14 +432,14 @@ s
 .thumb-150 {
   height: auto;
   width: 150px; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .thumb-150 {
       width: 75px; } }
 
 .thumb-100 {
   height: auto;
   width: 100px; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .thumb-100 {
       width: 50px; } }
 
@@ -447,6 +460,6 @@ s
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .flex-direction {
       flex-direction: col; } }
