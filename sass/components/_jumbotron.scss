@@ -17,8 +17,11 @@
     @include response(phone){
         background-image: linear-gradient(to right, rgba($color-primary, 0.75), rgba($color-info, 0.05)) , url('../img/jumbotron_phone.jpg');
     }
+    @include response(tabPort){
+        background-image: linear-gradient(to right, rgba($color-primary, 0.75), rgba($color-info, 0.05)) , url('../img/jumbotron_tab.jpg');
+    } 
     @include response(tabLand){
-        background-image: linear-gradient(to right, rgba($color-primary, 0.75), rgba($color-info, 0.05)) , url('../img/jumbotron_phone.jpg');
+        background-image: linear-gradient(to right, rgba($color-primary, 0.75), rgba($color-info, 0.05)) , url('../img/jumbotron_tab.jpg');
     }    
 }
 

@@ -182,9 +182,12 @@ ul li {
   @media (max-width: 600px) {
     .jumbotron {
       background-image: linear-gradient(to right, rgba(13, 71, 161, 0.75), rgba(66, 179, 244, 0.05)), url("../img/jumbotron_phone.jpg"); } }
+  @media (max-width: 900px) {
+    .jumbotron {
+      background-image: linear-gradient(to right, rgba(13, 71, 161, 0.75), rgba(66, 179, 244, 0.05)), url("../img/jumbotron_tab.jpg"); } }
   @media (max-width: 1200px) {
     .jumbotron {
-      background-image: linear-gradient(to right, rgba(13, 71, 161, 0.75), rgba(66, 179, 244, 0.05)), url("../img/jumbotron_phone.jpg"); } }
+      background-image: linear-gradient(to right, rgba(13, 71, 161, 0.75), rgba(66, 179, 244, 0.05)), url("../img/jumbotron_tab.jpg"); } }
 
 #jumbtron_button {
   padding: 10px 20px;
