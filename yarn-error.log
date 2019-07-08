@@ -1,0 +1,56 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn start
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/mysql/binalias:/Users/kui/Library/Android/sdk/tools:/Users/kui/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  11.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/kui/Documents/Websites/WMS/WMS/package.json: Unexpected token } in JSON at position 266
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "wms",
+    "version": "1.0.0",
+    "description": "WMS",
+    "main": "index.js",
+    "scripts": {
+      "compile:sass": "node-sass sass/main.scss  css/main.css -w",
+      "devserver": "live-server",
+      "start": "npm-run-all --parallel devserver watch:sass",
+      
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/keugenio/WMS.git"
+    },
+    "author": "Kui Eugenio",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/keugenio/WMS/issues"
+    },
+    "homepage": "https://github.com/keugenio/WMS#readme",
+    "devDependencies": {
+      "node-sass": "^4.12.0"
+    },
+    "dependencies": {}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
