@@ -1,7 +1,7 @@
 #heading {
     animation: moveInLeft 2s;
     animation-timing-function: ease-in-out;
-    font-size: 3rem;
+    font-size: 5em;
 
     @include response(phone){
         font-size: 2.75rem;

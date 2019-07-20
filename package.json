@@ -3,24 +3,26 @@
   "version": "1.0.0",
   "description": "WMS",
   "main": "index.js",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "sass": "^1.22.7"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
   "scripts": {
     "compile:sass": "node-sass sass/main.scss  css/main.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
-    
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/keugenio/WMS.git"
   },
-  "author": "Kui Eugenio",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/keugenio/WMS/issues"
   },
-  "homepage": "https://github.com/keugenio/WMS#readme",
-  "devDependencies": {
-    "node-sass": "^4.12.0"
-  },
-  "dependencies": {}
+  "homepage": "https://github.com/keugenio/WMS#readme"
 }
