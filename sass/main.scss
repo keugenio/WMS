@@ -10,6 +10,7 @@
 
 @import "components/jumbotron";
 @import "components/navbar";
+@import "components/modal";
 @import "layout/_header";
 @import "pages/home";
 
@@ -26,7 +27,8 @@
 .bottom-right{
     text-align: right;
     margin-top: -17vh;
-    margin-right:10px;   
+    margin-right:10px;
+    margin-bottom: 20px;   
 }
 
 #email {

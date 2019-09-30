@@ -217,6 +217,13 @@ ul li {
   padding-left: 5%;
   padding-right: 5%; }
 
+#contactModal .modal-content form {
+  padding-right: 15px; }
+  #contactModal .modal-content form input, #contactModal .modal-content form text-input {
+    width: 100%; }
+  #contactModal .modal-content form textarea {
+    width: 100%; }
+
 #heading {
   animation: moveInLeft 2s;
   animation-timing-function: ease-in-out;
@@ -427,7 +434,8 @@ s
 .bottom-right {
   text-align: right;
   margin-top: -17vh;
-  margin-right: 10px; }
+  margin-right: 10px;
+  margin-bottom: 20px; }
 
 #email {
   text-decoration: none; }
@@ -466,21 +474,3 @@ s
   @media (max-width: 600px) {
     .flex-direction {
       flex-direction: col; } }
-
-      .fade.in {
-        opacity: 1;
-      }
-      .modal.in .modal-dialog {
-        -webkit-transform: translate(0, 0);
-        -o-transform: translate(0, 0);
-        transform: translate(0, 0);
-      }
-      
-      .modal-backdrop .fade .in {
-        opacity: 0.5 !important;
-      }
-      
-      
-      .modal-backdrop.fade {
-          opacity: 0.5 !important;
-      }
