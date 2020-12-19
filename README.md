@@ -1,1 +1,1 @@
-WMS
+wms-app-build
